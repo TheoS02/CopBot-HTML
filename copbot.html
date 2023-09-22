@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CopBot Commands</title>
+	<link rel="stylesheet" type="text/css" href="future.css">
+</head>
+<body>
+	<h1>CopBot Commands</h1>
+	<div class="command">
+		<h2>/ping</h2>
+		<p class="description">Responds with "pong".</p>
+		<button class="button" onclick="showImage('ping')">Show Image</button>
+		<div id="image-container-ping"></div>
+	</div>
+	<div class="command">
+		<h2>/help</h2>
+		<p class="description">Gives you a drop down menu with info about all the commands</p>
+		<button class="button" onclick="showImage('help')">Show Image</button>
+		<div id="image-container-help"></div>
+	</div>
+	<div class="command">
+		<h2>/info</h2>
+		<p class="description">This command has 4 sub commands which are /info server /info user /info soviet and /info bot which each one having general information about each topic mentioned above</p>
+		<button class="button" onclick="showImage('info')">Show Image</button>
+		<div id="image-container-info"></div>
+	</div>
+    <div class="command">
+		<h2>/sovietfacts</h2>
+		<p class="description">This command sends random obscure facts about the USSR</p>
+		<button class="button" onclick="showImage('facts')">Show Image</button>
+		<div id="image-container-facts"></div>
+	</div>
+    <div class="command">
+		<h2>/republics</h2>
+		<p class="description">This command has 15 subcommands about each Soviet republic with their respective flag and size and population before the collapse</p>
+		<button class="button" onclick="showImage('republics')">Show Image</button>
+		<div id="image-container-republics"></div>
+	</div>
+    <div class="command">
+		<h2>/leaders</h2>
+		<p class="description">As the command mentions its information about each leader when they were leaders and until what date the ruled over the USSR</p>
+		<button class="button" onclick="showImage('leaders')">Show Image</button>
+		<div id="image-container-leaders"></div>
+	</div>
+    <div class="command">
+		<h2>/spaceachievements</h2>
+		<p class="description">This command mentions some of the most important landmarks that the Soviet union achieved in space</p>
+		<button class="button" onclick="showImage('spaceachievements')">Show Image</button>
+		<div id="image-container-spaceachievements"></div>
+	</div>
+    <div class="command">
+		<h2>/sovietanthem</h2>
+		<p class="description">Plays the USSR anthem in any Voice channel you pick, just make sure the bot has permissions to join that channel if its locked!</p>
+		<button class="button" onclick="showImage('sovietanthem')">Show Image</button>
+		<div id="image-container-sovietanthem"></div>
+	</div>
+    <div class="command">
+		<h2>/soviettest</h2>
+		<p class="description">This command tests your knowledge of the Soviet Union</p>
+		<button class="button" onclick="showImage('soviettest')">Show Image</button>
+		<div id="image-container-soviettest"></div>
+	</div>
+	<div class="command">
+		<h2>/sovietofficer</h2>
+		<p class="description">Welcome, comrade! You are a Soviet Immigration Officer responsible for approving or denying applications to enter our glorious country</p>
+		<button class="button" onclick="showImage('sovietofficer')">Show Image</button>
+		<div id="image-container-sovietofficer"></div>
+	</div>
+	<div class="command">
+		<h2>/collapse start</h2>
+		<p class="description">Shows and describes the collapse of the USSR with a description about each country that left the USSR and an image of the USSR map after the country left. Its recommended to listen to the sad version of the USSR anthem while using this command</p>
+		<button class="button" onclick="showImage('collapsestart')">Show Image</button>
+		<div id="image-container-collapsestart"></div>
+	</div>
+	<div class="command">
+		<h2>So what are you waiting for invite</h2>
+		<p class="description">Invite one of the largest soviet bots on discord!</p>
+		<button class="button"><a href='/invite'>Invite</a></button>
+	</div>
+	<script>
+		function showImage(command) {
+			if (command === 'ping') {
+				document.getElementById("image-container-ping").innerHTML = "<img src='screenshots/ping.png'>";
+			} else if (command === 'help') {
+				document.getElementById("image-container-help").innerHTML = "<img src='screenshots/help.png'>";
+			} else if (command === 'info') {
+				document.getElementById("image-container-info").innerHTML = "<img src='screenshots/info.png'>";
+			}  else if (command === 'facts') {
+				document.getElementById("image-container-facts").innerHTML = "<img src='screenshots/facts.png'>";
+			} else if (command === 'republics') {
+				document.getElementById("image-container-republics").innerHTML = "<img src='screenshots/republics.png'>";
+			} else if (command === 'leaders') {
+				document.getElementById("image-container-leaders").innerHTML = "<img src='screenshots/leaders.png'>";
+			} else if (command === 'spaceachievements') {
+				document.getElementById("image-container-spaceachievements").innerHTML = "<img src='screenshots/spaceachievements.png'>";
+			} else if (command === 'sovietanthem') {
+				document.getElementById("image-container-sovietanthem").innerHTML = "<img src='screenshots/sovietanthem.png'>";
+			} else if (command === 'soviettest') {
+				document.getElementById("image-container-soviettest").innerHTML = "<img src='screenshots/soviettest.png'>";
+			} else if (command === 'sovietofficer') {
+				document.getElementById("image-container-sovietofficer").innerHTML = "<img src='screenshots/sovietofficer.png'>";
+			} else if (command === 'collapsestart') {
+				document.getElementById("image-container-collapsestart").innerHTML = "<img src='screenshots/collapsestart.png'>";
+			}
+		}
+	</script>
+</body>
+</html>
+
+
